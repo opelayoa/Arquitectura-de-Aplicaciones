@@ -37,11 +37,11 @@ public class LoginPresenter implements LoginMVP.Presenter {
         if (user == null) {
             if (view != null) {
                 view.showUserNotAvailable();
-            } else {
-                if (view != null) {
-                    view.setFirstName(user.getFirstName());
-                    view.setLastName(user.getLastName());
-                }
+            }
+        } else {
+            if (view != null) {
+                view.setFirstName(user.getFirstName());
+                view.setLastName(user.getLastName());
             }
         }
     }
